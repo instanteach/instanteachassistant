@@ -9,7 +9,7 @@ credentials = ServiceAccountCredentials.from_json_keyfile_name('D:\All Docs\SWMM
 
 auth = gspread.authorize(credentials)#authenticate
 
-response_sheet=auth.open('Instanteach- Teacher Material Generator V1.2 (Responses)').sheet1
+response_sheet=auth.open('Instanteach: English Material Generator (Responses)').sheet1
 
 today_date = datetime.date.today() 
 
