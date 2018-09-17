@@ -13,7 +13,7 @@ auth = gspread.authorize(credentials)#authenticate
 
 response_sheet=auth.open('Instanteach: English Material Generator ').sheet1
 
-last_row= 931
+last_row= 930
 under_last_row=last_row+1
 new_email=str(response_sheet.cell(under_last_row,3).value)
 all_email_addresses=str(response_sheet.col_values(3))
@@ -23,7 +23,7 @@ previous_entry_checol_counter= all_email_addresses.count(new_email)
 
 
 def main():
-    last_row= 931
+    last_row= 930
     under_last_row=last_row+1
     new_email=str(response_sheet.cell(under_last_row,3).value)
     all_email_addresses=str(response_sheet.col_values(3))
