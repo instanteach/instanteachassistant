@@ -30,7 +30,7 @@ def main():
     previous_entry_checol_counter= all_email_addresses.count(new_email)
     print(previous_entry_checol_counter)
 
-    last_row=50
+    last_row=931
     if previous_entry_checol_counter>1 :
         email_exists=True
     else:
@@ -45,15 +45,6 @@ def main():
     else:
         print('no email')
     
-    
-
-    
-   
-    
-
-
-
-
 
 def send_welcome_email():
     teachername= str(response_sheet.cell(under_last_row,4).value)#teacher name
