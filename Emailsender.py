@@ -39,12 +39,7 @@ def main():
     if '@' in new_email and email_exists==False:
         send_welcome_email()
         last_row=last_row+1
-    carryon=input('continue?')
-    if carryon=='y':
-        main()
-    else:
-        print('no email')
-    
+ 
 
 def send_welcome_email():
     teachername= str(response_sheet.cell(under_last_row,4).value)#teacher name
